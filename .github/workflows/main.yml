@@ -21,7 +21,7 @@ jobs:
           java-version: '17'
 
       - name: Make Gradle executable
-        run: pwd && ls -la && find . -name gradlew -type f -print
+        run: chmod +x gradlew
 
       - name: Build APK
         run: ./gradlew assembleDebug
